@@ -1,0 +1,68 @@
+{
+  "name": "rt",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://yonda-yonda.github.io/rt",
+  "dependencies": {
+    "@craco/craco": "^7.0.0",
+    "@types/node": "^16.18.39",
+    "@types/react": "^18.2.19",
+    "@types/react-dom": "^18.2.7",
+    "@types/styled-components": "^5.1.10",
+    "eslint": "^8.27.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
+    "react-scripts": "5.0.1",
+    "styled-components": "^5.3.0",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/plugin-transform-modules-commonjs": "^7.22.5",
+    "@babel/preset-env": "^7.22.10",
+    "@babel/preset-typescript": "^7.22.5",
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "babel-plugin-styled-components": "^1.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "gh-pages": "^6.1.0",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.14.1",
+    "stylelint-config-recommended": "^9.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0",
+    "webpack": "^5.88.2"
+  },
+  "scripts": {
+    "start": "PORT=3000 craco start",
+    "build": "craco build",
+    "server": "node server.js",
+    "eject": "react-scripts eject",
+    "lint:es": "eslint 'src/**/*.{js,tsx,ts,tsx}'",
+    "lint:css": "stylelint 'src/**/*.{js,tsx,ts,tsx}'",
+    "deploy": "yarn build; gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://127.0.0.1:8000"
+}
